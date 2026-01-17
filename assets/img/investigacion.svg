@@ -1,0 +1,47 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="600" fill="#F0F5FA"/>
+<!-- Background Elements -->
+<circle cx="400" cy="300" r="250" stroke="#E1E9F2" stroke-width="2"/>
+<circle cx="400" cy="300" r="180" stroke="#D3DEF0" stroke-width="2"/>
+
+<!-- Central Shield (Security/OpenKM) -->
+<path d="M400 180C400 180 520 190 520 280C520 380 400 460 400 460C400 460 280 380 280 280C280 190 400 180 400 180Z" fill="#2C5BA1"/>
+<path d="M400 180C400 180 520 190 520 280C520 380 400 460 400 460" fill="#1A407A" fill-opacity="0.2"/>
+
+<!-- Checkmark/Magnifying Glass inside Shield -->
+<path d="M370 300L400 330L460 250" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- Floating Documents/Nodes -->
+<g transform="translate(200, 200)">
+    <rect x="-40" y="-50" width="80" height="100" rx="8" fill="white" stroke="#2C5BA1" stroke-width="2"/>
+    <rect x="-25" y="-30" width="50" height="4" rx="2" fill="#E5E5E5"/>
+    <rect x="-25" y="-15" width="50" height="4" rx="2" fill="#E5E5E5"/>
+    <rect x="-25" y="0" width="30" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+
+<g transform="translate(600, 200)">
+    <rect x="-40" y="-50" width="80" height="100" rx="8" fill="white" stroke="#2C5BA1" stroke-width="2"/>
+    <rect x="-25" y="-30" width="50" height="4" rx="2" fill="#E5E5E5"/>
+    <rect x="-25" y="-15" width="50" height="4" rx="2" fill="#E5E5E5"/>
+    <rect x="-25" y="0" width="30" height="4" rx="2" fill="#E5E5E5"/>
+</g>
+
+<g transform="translate(250, 450)">
+    <circle r="40" fill="white" stroke="#2C5BA1" stroke-width="2"/>
+    <path d="M-15 5A15 15 0 0 1 15 5" stroke="#2C5BA1" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="-10" r="8" fill="#2C5BA1"/>
+</g>
+
+<g transform="translate(550, 450)">
+    <circle r="40" fill="white" stroke="#2C5BA1" stroke-width="2"/>
+    <path d="M-15 5A15 15 0 0 1 15 5" stroke="#2C5BA1" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="-10" r="8" fill="#2C5BA1"/>
+</g>
+
+<!-- Connecting Lines -->
+<line x1="240" y1="200" x2="330" y2="250" stroke="#2C5BA1" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="560" y1="200" x2="470" y2="250" stroke="#2C5BA1" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="290" y1="450" x2="350" y2="400" stroke="#2C5BA1" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="510" y1="450" x2="450" y2="400" stroke="#2C5BA1" stroke-width="2" stroke-dasharray="5 5"/>
+
+</svg>

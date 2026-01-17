@@ -1,0 +1,18 @@
+/*
+Theme Name: Busca Salud Profesional
+Theme URI: http://buscasaludprofesional.com
+Author: Busca Salud Team
+Author URI: http://buscasaludprofesional.com
+Description: Tema a medida para Busca Salud Profesional.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: busca-salud
+*/
+
+/* Importar estilos originales */
+@import url('assets/css/style.css');
+
+/* ==========================================================================
+   Aquí puedes añadir sobreescrituras específicas para WordPress si es necesario
+   ========================================================================== */
