@@ -40,26 +40,9 @@
     </div>
 </section>
 
-<!-- Buscador -->
-<section id="buscador" class="section">
-    <div class="container section-content">
-        <div class="section-text-block">
-            <h2>Buscador Global de Salud</h2>
-            <p>Encuentra al profesional ideal en cualquier parte del mundo. Filtra por especialidad, ubicación y
-                necesidades específicas. Ya seas paciente, empresa o institución, aquí está el experto cualificado
-                que buscas.</p>
-            <a href="#" class="btn btn-outline">Empezar Búsqueda</a>
-        </div>
-        <div class="section-image-block">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/buscador.png" alt="Buscador Global"
-                style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    </div>
-</section>
-
 <!-- Revista -->
 <section id="revista" class="section">
-    <div class="container section-content reverse">
+    <div class="container section-content">
         <div class="section-text-block">
             <h2>Revista de Especialidades</h2>
             <p>Descubre quién está detrás del servicio. Nuestros profesionales comparten su conocimiento a través de
@@ -68,22 +51,6 @@
         </div>
         <div class="section-image-block">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/revista.png" alt="Revista Salud"
-                style="width:100%; height:100%; object-fit:cover;">
-        </div>
-    </div>
-</section>
-
-<!-- Agenda -->
-<section id="agenda" class="section">
-    <div class="container section-content">
-        <div class="section-text-block">
-            <h2>Agenda Mundial de Eventos</h2>
-            <p>El calendario definitivo de cursos, convenciones, congresos y talleres de salud. Mantente al día de
-                todas las actividades formativas y presenciales a nivel global.</p>
-            <a href="#" class="btn btn-outline">Ver Próximos Eventos</a>
-        </div>
-        <div class="section-image-block">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/agenda.png" alt="Agenda Eventos"
                 style="width:100%; height:100%; object-fit:cover;">
         </div>
     </div>
@@ -105,25 +72,42 @@
     </div>
 </section>
 
-<!-- Tienda -->
-<section id="tienda" class="section">
+<!-- Buscador -->
+<section id="buscador" class="section">
     <div class="container section-content">
         <div class="section-text-block">
-            <h2>Tienda de Recursos</h2>
-            <p>Tu acceso directo al conocimiento. Compra cursos de la academia, suscripciones a grupos de
-                investigación y productos seleccionados para el sector salud y bienestar.</p>
-            <a href="#" class="btn btn-outline">Visitar Tienda</a>
+            <h2>Buscador Global de Salud</h2>
+            <p>Encuentra al profesional ideal en cualquier parte del mundo. Filtra por especialidad, ubicación y
+                necesidades específicas. Ya seas paciente, empresa o institución, aquí está el experto cualificado
+                que buscas.</p>
+            <a href="#" class="btn btn-outline">Empezar Búsqueda</a>
         </div>
         <div class="section-image-block">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tienda.png" alt="Tienda Online"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/buscador.png" alt="Buscador Global"
                 style="width:100%; height:100%; object-fit:cover;">
         </div>
     </div>
 </section>
 
-<!-- Academia (Nuevo: Separado) -->
-<section id="academia" class="section">
+<!-- Agenda -->
+<section id="agenda" class="section">
     <div class="container section-content reverse">
+        <div class="section-text-block">
+            <h2>Agenda Mundial de Eventos</h2>
+            <p>El calendario definitivo de cursos, convenciones, congresos y talleres de salud. Mantente al día de
+                todas las actividades formativas y presenciales a nivel global.</p>
+            <a href="#" class="btn btn-outline">Ver Próximos Eventos</a>
+        </div>
+        <div class="section-image-block">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/agenda.png" alt="Agenda Eventos"
+                style="width:100%; height:100%; object-fit:cover;">
+        </div>
+    </div>
+</section>
+
+<!-- Academia -->
+<section id="academia" class="section">
+    <div class="container section-content">
         <div class="section-text-block">
             <h2>Academia Online</h2>
             <p>Formación creada por profesionales, para todos. Desde cursos para pacientes que buscan autocuidado
@@ -137,7 +121,23 @@
     </div>
 </section>
 
-<!-- Investigación (Anteriormente Gestión) -->
+<!-- Tienda -->
+<section id="tienda" class="section">
+    <div class="container section-content reverse">
+        <div class="section-text-block">
+            <h2>Tienda de Recursos</h2>
+            <p>Tu acceso directo al conocimiento. Compra cursos de la academia, suscripciones a grupos de
+                investigación y productos seleccionados para el sector salud y bienestar.</p>
+            <a href="#" class="btn btn-outline">Visitar Tienda</a>
+        </div>
+        <div class="section-image-block">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tienda.png" alt="Tienda Online"
+                style="width:100%; height:100%; object-fit:cover;">
+        </div>
+    </div>
+</section>
+
+<!-- Investigación -->
 <section id="investigacion" class="section">
     <div class="container section-content">
         <div class="section-text-block">

@@ -22,12 +22,12 @@
                 <ul>
                     <!-- Note: In a full WordPress theme, this would often be wp_nav_menu() -->
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#buscador" class="nav-link">Buscador</a></li>
                     <li><a href="#revista" class="nav-link">Revista</a></li>
-                    <li><a href="#agenda" class="nav-link">Agenda</a></li>
                     <li><a href="#foro" class="nav-link">Foro</a></li>
-                    <li><a href="#tienda" class="nav-link">Tienda</a></li>
+                    <li><a href="#buscador" class="nav-link">Buscador</a></li>
+                    <li><a href="#agenda" class="nav-link">Agenda</a></li>
                     <li><a href="#academia" class="nav-link">Academia</a></li>
+                    <li><a href="#tienda" class="nav-link">Tienda</a></li>
                     <li><a href="#investigacion" class="nav-link">Investigación</a></li>
                     <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
                 </ul>

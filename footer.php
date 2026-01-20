@@ -12,26 +12,26 @@
             <div class="footer-col">
                 <h4>Plataforma</h4>
                 <ul class="footer-links">
-                    <li><a href="#buscador">Buscador</a></li>
                     <li><a href="#revista">Revista</a></li>
+                    <li><a href="#buscador">Buscador</a></li>
                     <li><a href="#agenda">Agenda</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Recursos</h4>
                 <ul class="footer-links">
+                    <li><a href="#foro">Foro</a></li>
                     <li><a href="#academia">Academia</a></li>
                     <li><a href="#investigacion">Investigación</a></li>
-                    <li><a href="#foro">Foro</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Contacto</h4>
-                <p style="font-size: 0.9rem; color: #666;">info@buscasaludprofesional.com</p>
+                <p style="font-size: 0.9rem; color: #666;">buscasalud.pro@gmail.com</p>
                 <div class="social-icons footer-social">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Threads"><i class="fab fa-threads"></i></a>
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="Threads"><i class="fab fa-threads"></i></a>
                 </div>
             </div>
         </div>

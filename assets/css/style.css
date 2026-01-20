@@ -444,7 +444,7 @@ img {
 
 .footer-links a:hover {
     color: var(--color-primary);
-    transform: translateX(4px);
+    /* TRANSFORM REMOVED */
     display: inline-block;
 }
 
