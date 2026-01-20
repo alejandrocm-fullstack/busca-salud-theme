@@ -29,8 +29,10 @@
                 <h4>Contacto</h4>
                 <p style="font-size: 0.9rem; color: #666;">buscasalud.pro@gmail.com</p>
                 <div class="social-icons footer-social">
-                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/buscasalud.pro/" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/buscasalud.pro/" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
                     <a href="#" target="_blank" aria-label="Threads"><i class="fab fa-threads"></i></a>
                 </div>
             </div>
