@@ -23,11 +23,11 @@
                 <form>
                     <div class="form-group">
                         <label class="form-label">Email / Usuario</label>
-                        <input type="text" class="form-input" placeholder="correo@dominio.com o usuario">
+                        <input type="text" class="form-input" placeholder="correo o usuario">
                     </div>
                     <div class="form-group">
                         <label class="form-label">Contraseña</label>
-                        <input type="password" class="form-input" placeholder="••••••••">
+                        <input type="password" class="form-input" placeholder="contraseña">
                     </div>
                     <button type="button" class="btn btn-primary btn-login">Entrar</button>
                 </form>
