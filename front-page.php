@@ -3,14 +3,14 @@
 <!-- Hero Section -->
 <section id="inicio" class="hero">
     <div class="container hero-content">
-        <h1>Donde la necesidad encuentra a la excelencia</h1>
-        <p>El punto de encuentro global entre personas que buscan salud y profesionales que ofrecen soluciones,
-            conocimiento e innovación.</p>
+        <h1>La salud empieza con la información correcta y el profesional adecuado</h1>
+        <p>Antes de elegir un profesional de la salud, conócelo a través de sus artículos especializados, su actividad
+            en el foro, sus eventos y sus formaciones, y localízalo en el buscador de profesionales.</p>
 
         <!-- Botones Registro Separados -->
         <div class="hero-buttons">
-            <a href="#registro-profesional" class="btn btn-primary">Registrarme como Profesional</a>
-            <a href="#registro-usuario" class="btn btn-outline">Registrarme como Usuario</a>
+            <a href="#registro-profesional" class="btn btn-primary">Regístrate como Profesional</a>
+            <a href="#registro-usuario" class="btn btn-outline">Regístrate como Usuario</a>
         </div>
 
         <!-- Caja de Login Superior -->
@@ -23,7 +23,7 @@
                 <form>
                     <div class="form-group">
                         <label class="form-label">Email / Usuario</label>
-                        <input type="text" class="form-input" placeholder="ejemplo@correo.com">
+                        <input type="text" class="form-input" placeholder="ejemplo@dominio.com">
                     </div>
                     <div class="form-group">
                         <label class="form-label">Contraseña</label>
@@ -44,13 +44,13 @@
 <section id="revista" class="section">
     <div class="container section-content">
         <div class="section-text-block">
-            <h2>Revista de Especialidades</h2>
-            <p>Descubre quién está detrás del servicio. Nuestros profesionales comparten su conocimiento a través de
-                artículos especializados, permitiéndote conocer su experiencia y enfoque antes de contratar.</p>
+            <h2>Revista</h2>
+            <p>Artículos especializados de salud escritos por profesionales. Información precisa y fundamentada para
+                comprender mejor tu situación de salud, conocer a los especialistas y su enfoque profesional.</p>
             <a href="#" class="btn btn-outline">Leer Artículos</a>
         </div>
         <div class="section-image-block">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/revista.png" alt="Revista Salud"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/revista.png" alt="Revista"
                 style="width:100%; height:100%; object-fit:cover;">
         </div>
     </div>
@@ -60,13 +60,13 @@
 <section id="foro" class="section">
     <div class="container section-content reverse">
         <div class="section-text-block">
-            <h2>Foro de Diálogo</h2>
-            <p>Un espacio de conversación abierto. Profesionales creando hilos de debate científico y pacientes
-                resolviendo dudas o compartiendo experiencias en una comunidad viva.</p>
-            <a href="#" class="btn btn-outline">Ir a los Debates</a>
+            <h2>Foro</h2>
+            <p>Espacio de diálogo donde los profesionales amplían sus artículos, responden dudas y profundizan en los
+                temas tratados, permitiendo a los usuarios valorar una consulta o visita con mayor criterio.</p>
+            <a href="#" class="btn btn-outline">Ver Conversaciones</a>
         </div>
         <div class="section-image-block">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/foro.png" alt="Foro Comunidad"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/foro.png" alt="Foro"
                 style="width:100%; height:100%; object-fit:cover;">
         </div>
     </div>
@@ -76,14 +76,14 @@
 <section id="buscador" class="section">
     <div class="container section-content">
         <div class="section-text-block">
-            <h2>Buscador Global de Salud</h2>
-            <p>Encuentra al profesional ideal en cualquier parte del mundo. Filtra por especialidad, ubicación y
-                necesidades específicas. Ya seas paciente, empresa o institución, aquí está el experto cualificado
-                que buscas.</p>
-            <a href="#" class="btn btn-outline">Empezar Búsqueda</a>
+            <h2>Buscador</h2>
+            <p>Localiza profesionales de la salud en cualquier parte del mundo.
+                Tras informarte y resolver tus dudas, utiliza el buscador para encontrar al profesional adecuado y
+                valorar una consulta, contacto o contratación según tus necesidades.</p>
+            <a href="#" class="btn btn-outline">Buscar Profesionales</a>
         </div>
         <div class="section-image-block">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/buscador.png" alt="Buscador Global"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/buscador.png" alt="Buscador"
                 style="width:100%; height:100%; object-fit:cover;">
         </div>
     </div>
@@ -93,13 +93,14 @@
 <section id="agenda" class="section">
     <div class="container section-content reverse">
         <div class="section-text-block">
-            <h2>Agenda Mundial de Eventos</h2>
-            <p>El calendario definitivo de cursos, convenciones, congresos y talleres de salud. Mantente al día de
-                todas las actividades formativas y presenciales a nivel global.</p>
-            <a href="#" class="btn btn-outline">Ver Próximos Eventos</a>
+            <h2>Agenda</h2>
+            <p>Consulta conferencias, congresos, ferias, encuentros profesionales y fechas de inicio de cursos y
+                talleres, tanto online como presenciales, organizados o impartidos por profesionales de la salud a nivel
+                internacional.</p>
+            <a href="#" class="btn btn-outline">Ver Agenda</a>
         </div>
         <div class="section-image-block">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/agenda.png" alt="Agenda Eventos"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/agenda.png" alt="Agenda"
                 style="width:100%; height:100%; object-fit:cover;">
         </div>
     </div>
@@ -109,13 +110,14 @@
 <section id="academia" class="section">
     <div class="container section-content">
         <div class="section-text-block">
-            <h2>Academia Online</h2>
-            <p>Formación creada por profesionales, para todos. Desde cursos para pacientes que buscan autocuidado
-                hasta formación especializada para otros expertos (Moodle).</p>
-            <a href="#" class="btn btn-outline">Catálogo de Cursos</a>
+            <h2>Academia</h2>
+            <p>Formación en salud impartida por profesionales. Cursos estructurados en modalidad online, presencial o
+                combinada, con una plataforma de apoyo para el seguimiento, los contenidos y el aprendizaje continuo.
+            </p>
+            <a href="#" class="btn btn-outline">Ver Cursos</a>
         </div>
         <div class="section-image-block">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/academia.png" alt="Academia Moodle"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/academia.png" alt="Academia"
                 style="width:100%; height:100%; object-fit:cover;">
         </div>
     </div>
@@ -125,13 +127,13 @@
 <section id="tienda" class="section">
     <div class="container section-content reverse">
         <div class="section-text-block">
-            <h2>Tienda de Recursos</h2>
-            <p>Tu acceso directo al conocimiento. Compra cursos de la academia, suscripciones a grupos de
-                investigación y productos seleccionados para el sector salud y bienestar.</p>
-            <a href="#" class="btn btn-outline">Visitar Tienda</a>
+            <h2>Tienda</h2>
+            <p>Compra cursos y productos de salud y bienestar. Accede desde la plataforma a formación impartida por
+                profesionales y, para profesionales, a espacios de investigación y colaboración.</p>
+            <a href="#" class="btn btn-outline">Explorar Tienda</a>
         </div>
         <div class="section-image-block">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tienda.png" alt="Tienda Online"
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tienda.png" alt="Tienda"
                 style="width:100%; height:100%; object-fit:cover;">
         </div>
     </div>
@@ -141,14 +143,15 @@
 <section id="investigacion" class="section">
     <div class="container section-content">
         <div class="section-text-block">
-            <h2>Investigación y Colaboración</h2>
-            <p>Impulsa la ciencia. Un entorno seguro para crear grupos de trabajo (OpenKM), compartir
-                descubrimientos y colaborar en investigaciones clínicas internacionales.</p>
+            <h2>Investigación</h2>
+            <p>Espacio profesional y seguro, exclusivo para especialistas, donde crear grupos de trabajo de alcance
+                internacional, gestionar documentación clínica de casos no resueltos y colaborar en la investigación
+                aplicada y la mejora continua de tratamientos en enfermedades específicas.</p>
             <a href="#" class="btn btn-outline">Área Científica</a>
         </div>
         <div class="section-image-block">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/investigacion.svg"
-                alt="Investigación Colaborativa" style="width:100%; height:100%; object-fit:cover;">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/investigacion.svg" alt="Investigación"
+                style="width:100%; height:100%; object-fit:cover;">
         </div>
     </div>
 </section>
@@ -157,7 +160,9 @@
 <section id="nosotros" class="section" style="background-color: var(--color-bg-light);">
     <div class="container section-text-block" style="text-align: center; max-width: 800px;">
         <h2>Quiénes Somos</h2>
-        <p>Un equipo multidisciplinar comprometido con la excelencia en salud digital.</p>
+        <p>Una plataforma de salud basada en la transparencia, el conocimiento y la autonomía profesional. Un espacio
+            donde los profesionales ejercen con libertad y las personas pueden informarse, comprender y decidir con
+            criterio.</p>
         <a href="#" class="btn btn-outline">Más sobre nosotros</a>
     </div>
 </section>
