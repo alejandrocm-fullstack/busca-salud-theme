@@ -416,6 +416,27 @@ img {
     gap: 60px;
 }
 
+.footer-col-span-2 {
+    grid-column: span 2;
+}
+
+.footer-subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+@media (max-width: 992px) {
+    .footer-col-span-2 {
+        grid-column: auto;
+    }
+
+    .footer-subgrid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+
 .footer-logo {
     height: 70px;
     width: auto;

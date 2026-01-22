@@ -23,7 +23,7 @@
                 <form>
                     <div class="form-group">
                         <label class="form-label">Email / Usuario</label>
-                        <input type="text" class="form-input" placeholder="ejemplo@dominio.com">
+                        <input type="text" class="form-input" placeholder="correo@dominio.com o usuario">
                     </div>
                     <div class="form-group">
                         <label class="form-label">Contraseña</label>
@@ -128,8 +128,9 @@
     <div class="container section-content reverse">
         <div class="section-text-block">
             <h2>Tienda</h2>
-            <p>Compra cursos y productos de salud y bienestar. Accede desde la plataforma a formación impartida por
-                profesionales y, para profesionales, a espacios de investigación y colaboración.</p>
+            <p>Compra cursos, accesos profesionales y productos de salud y bienestar. Desde la plataforma podrás acceder
+                a formación impartida por profesionales y, exclusivamente para profesionales, a espacios de
+                investigación y colaboración.</p>
             <a href="#" class="btn btn-outline">Explorar Tienda</a>
         </div>
         <div class="section-image-block">
