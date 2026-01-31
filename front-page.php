@@ -9,8 +9,8 @@
 
         <!-- Botones Registro Separados -->
         <div class="hero-buttons">
-            <a href="#registro-profesional" class="btn btn-primary">Regístrate como Profesional</a>
-            <a href="#registro-usuario" class="btn btn-outline">Regístrate como Usuario</a>
+            <a href="<?php echo home_url('/?page_id=42'); ?>" class="btn btn-primary">Regístrate como Profesional</a>
+            <a href="<?php echo home_url('/?page_id=42'); ?>" class="btn btn-outline">Regístrate como Usuario</a>
         </div>
 
         <!-- Caja de Login Superior -->
