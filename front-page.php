@@ -9,32 +9,8 @@
 
         <!-- Botones Registro Separados -->
         <div class="hero-buttons">
-            <a href="<?php echo home_url('/?page_id=42'); ?>" class="btn btn-primary">Regístrate como Profesional</a>
-            <a href="<?php echo home_url('/?page_id=42'); ?>" class="btn btn-outline">Regístrate como Usuario</a>
-        </div>
-
-        <!-- Caja de Login Superior -->
-        <div class="login-box-container">
-            <div class="login-card">
-                <div class="login-header">
-                    <h3>Acceso Seguro</h3>
-                    <p>Entra a tu espacio personal</p>
-                </div>
-                <form>
-                    <div class="form-group">
-                        <label class="form-label">Email / Usuario</label>
-                        <input type="text" class="form-input" placeholder="correo o usuario">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Contraseña</label>
-                        <input type="password" class="form-input" placeholder="contraseña">
-                    </div>
-                    <button type="button" class="btn btn-primary btn-login">Entrar</button>
-                </form>
-                <div class="login-footer">
-                    <a href="#">¿Olvidaste tu contraseña?</a>
-                </div>
-            </div>
+            <a href="<?php echo home_url('/?page_id=42'); ?>" class="btn btn-primary">Crear cuenta</a>
+            <a href="<?php echo home_url('/?page_id=41'); ?>" class="btn btn-outline">Iniciar sesión</a>
         </div>
 
     </div>
