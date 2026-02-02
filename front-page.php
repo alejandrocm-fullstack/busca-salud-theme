@@ -13,7 +13,11 @@
                 Profesional</a>
             <a href="<?php echo home_url('/?page_id=42&tipo=usuario'); ?>" class="btn btn-primary">Regístrate como
                 Usuario</a>
-            <a href="<?php echo home_url('/?page_id=41'); ?>" class="btn btn-outline">Iniciar sesión</a>
+            <?php if (is_user_logged_in()): ?>
+                <a href="<?php echo home_url('/?page_id=41'); ?>" class="btn btn-outline">Ir a mi Perfil</a>
+            <?php else: ?>
+                <a href="<?php echo home_url('/?page_id=41'); ?>" class="btn btn-outline">Iniciar sesión</a>
+            <?php endif; ?>
         </div>
 
     </div>
