@@ -9,7 +9,10 @@
 
         <!-- Botones Registro Separados -->
         <div class="hero-buttons">
-            <a href="<?php echo home_url('/?page_id=42'); ?>" class="btn btn-primary">Crear cuenta</a>
+            <a href="<?php echo home_url('/?page_id=42&tipo=profesional'); ?>" class="btn btn-primary">Regístrate como
+                Profesional</a>
+            <a href="<?php echo home_url('/?page_id=42&tipo=usuario'); ?>" class="btn btn-primary">Regístrate como
+                Usuario</a>
             <a href="<?php echo home_url('/?page_id=41'); ?>" class="btn btn-outline">Iniciar sesión</a>
         </div>
 
