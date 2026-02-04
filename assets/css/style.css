@@ -737,18 +737,28 @@ img {
     display: none !important;
 }
 
-/* Ajuste Logo Móvil (para que no salte de línea) */
+/* Ajuste Logo Móvil (Dos líneas IMPONENTES) */
 @media (max-width: 768px) {
+    .logo-container {
+        max-width: 80%;
+        /* Aprovechamos más ancho */
+    }
+
     .logo-text {
-        font-size: 1rem;
-        /* Reduzco de 1.4rem a 1rem */
-        white-space: nowrap;
-        /* Fuerza una sola línea */
+        font-size: 1.35rem;
+        /* ¡Más grande! */
+        white-space: normal;
+        /* Permite dos líneas */
+        line-height: 1.05;
+        /* Muy compacto */
+        display: block;
+        /* Asegura que el bloque tome forma */
     }
 
     .logo-container img {
-        height: 36px;
-        /* Reduzco un poco el icono también */
+        height: 52px;
+        /* Logo más grande acorde al texto */
+        align-self: center;
     }
 }
 
