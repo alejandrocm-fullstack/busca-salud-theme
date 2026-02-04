@@ -57,4 +57,14 @@ function bs_mostrar_contenido_condicional($atts, $content = null)
 }
 add_shortcode('bs_mostrar_si', 'bs_mostrar_contenido_condicional');
 
+// Filtro para ocultar la pestaña 'Privacidad' de Ultimate Member
+add_filter('um_account_page_default_tabs_hook', 'bs_remove_um_privacy_tab', 100, 1);
+function bs_remove_um_privacy_tab($tabs)
+{
+    if (isset($tabs['privacy'])) {
+        unset($tabs['privacy']);
+    }
+    return $tabs;
+}
+
 ?>
