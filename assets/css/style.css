@@ -725,10 +725,44 @@ img {
 }
 
 /* Responsive adjustments */
+.um-profile .um-cover,
+.um-profile .um-cover-e {
+    height: 200px !important;
+}
+}
+
+/* Ocultar pestaña Privacidad en Cuenta Ultimate Member */
+.um-account-nav a[data-tab="privacy"],
+.um-account-tab-privacy {
+    display: none !important;
+}
+
+/* Ajuste Logo Móvil (para que no salte de línea) */
+@media (max-width: 768px) {
+    .logo-text {
+        font-size: 1rem;
+        /* Reduzco de 1.4rem a 1rem */
+        white-space: nowrap;
+        /* Fuerza una sola línea */
+    }
+
+    .logo-container img {
+        height: 36px;
+        /* Reduzco un poco el icono también */
+    }
+}
+
+/* Fix GLOBAL para espaciado lateral en móviles (Todo Ultimate Member) */
 @media (max-width: 768px) {
 
-    .um-profile .um-cover,
-    .um-profile .um-cover-e {
-        height: 200px !important;
+    /* Aplicar a cualquier elemento contenedor de Ultimate Member */
+    .um {
+        padding-left: 32px !important;
+        /* Igual que el container general */
+        padding-right: 32px !important;
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
