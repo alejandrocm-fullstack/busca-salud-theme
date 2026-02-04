@@ -422,8 +422,8 @@ img {
     .header {
         height: auto;
         position: relative;
-        padding-top: 20px;
-        /* Force space at top (Green fix) */
+        padding-top: 0;
+        /* Corrección: Quitamos el padding extra para centrar verticalmente */
     }
 
     .nav-menu {
