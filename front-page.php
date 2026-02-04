@@ -14,7 +14,7 @@
             <a href="<?php echo home_url('/registro/?tipo=usuario'); ?>" class="btn btn-primary">Regístrate como
                 Usuario</a>
             <?php if (is_user_logged_in()): ?>
-                <a href="<?php echo home_url('/cuenta'); ?>" class="btn btn-outline">Ir a mi Perfil</a>
+                <a href="<?php echo home_url('/usuario'); ?>" class="btn btn-outline">Ir a mi Perfil</a>
             <?php else: ?>
                 <a href="<?php echo home_url('/acceder'); ?>" class="btn btn-outline">Acceder</a>
             <?php endif; ?>
