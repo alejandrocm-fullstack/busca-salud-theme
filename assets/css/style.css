@@ -606,14 +606,13 @@ img {
     z-index: 2000;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    /* Inicio desde arriba para permitir scroll */
+    justify-content: center;
+    /* Volvemos a centrar verticalmente */
     align-items: center;
-    overflow-y: auto;
-    /* Permitir scroll si el menú es largo */
-    padding-top: 80px;
-    /* Espacio para el botón de cerrar */
-    padding-bottom: 40px;
+    overflow-y: hidden;
+    /* Ya no hace falta scroll porque caben bien */
+    padding: 0;
+    /* Quitamos padding para que el centrado sea puro */
     opacity: 0;
     visibility: hidden;
     transition: all 0.4s ease;
@@ -638,12 +637,20 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2001;
+    /* Asegurar que el botón esté por encima si se solapa */
+}
+
+.mobile-nav {
+    width: 100%;
+    /* Asegurar ancho completo para centrado horizontal perfecto */
 }
 
 .mobile-nav ul {
     list-style: none;
     text-align: center;
     padding: 0;
+    width: 100%;
 }
 
 .mobile-nav li {
@@ -741,6 +748,12 @@ img {
     }
 }
 
+/* Ocultar Título de Página "Usuario" / "Cuenta" SOLO en páginas de Ultimate Member */
+.um-page .entry-title,
+.um-page h1.page-title,
+.page-template-default.um-page h1 {
+    display: none !important;
+}
 
 
 /* Ajuste Logo Móvil (Dos líneas IMPONENTES) */
