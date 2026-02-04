@@ -9,14 +9,14 @@
 
         <!-- Botones Registro Separados -->
         <div class="hero-buttons">
-            <a href="<?php echo home_url('/?page_id=42&tipo=profesional'); ?>" class="btn btn-primary">Regístrate como
+            <a href="<?php echo home_url('/registro/?tipo=profesional'); ?>" class="btn btn-primary">Regístrate como
                 Profesional</a>
-            <a href="<?php echo home_url('/?page_id=42&tipo=usuario'); ?>" class="btn btn-primary">Regístrate como
+            <a href="<?php echo home_url('/registro/?tipo=usuario'); ?>" class="btn btn-primary">Regístrate como
                 Usuario</a>
             <?php if (is_user_logged_in()): ?>
-                <a href="<?php echo home_url('/?page_id=41'); ?>" class="btn btn-outline">Ir a mi Perfil</a>
+                <a href="<?php echo home_url('/cuenta'); ?>" class="btn btn-outline">Ir a mi Perfil</a>
             <?php else: ?>
-                <a href="<?php echo home_url('/?page_id=41'); ?>" class="btn btn-outline">Iniciar sesión</a>
+                <a href="<?php echo home_url('/acceder'); ?>" class="btn btn-outline">Acceder</a>
             <?php endif; ?>
         </div>
 
@@ -30,7 +30,7 @@
             <h2>Revista</h2>
             <p>Artículos especializados de salud escritos por profesionales. Información precisa y fundamentada para
                 comprender mejor tu situación de salud, conocer a los especialistas y su enfoque profesional.</p>
-            <a href="#" class="btn btn-outline">Leer Artículos</a>
+            <a href="<?php echo home_url('/revista'); ?>" class="btn btn-outline">Leer Artículos</a>
         </div>
         <div class="section-image-block">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/revista.png" alt="Revista"
@@ -46,7 +46,7 @@
             <h2>Foro</h2>
             <p>Espacio de diálogo donde los profesionales amplían sus artículos, responden dudas y profundizan en los
                 temas tratados, permitiendo a los usuarios valorar una consulta o visita con mayor criterio.</p>
-            <a href="#" class="btn btn-outline">Ver Conversaciones</a>
+            <a href="<?php echo home_url('/foro'); ?>" class="btn btn-outline">Ver Conversaciones</a>
         </div>
         <div class="section-image-block">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/foro.png" alt="Foro"
@@ -63,7 +63,7 @@
             <p>Localiza profesionales de la salud en cualquier parte del mundo.
                 Tras informarte y resolver tus dudas, utiliza el buscador para encontrar al profesional adecuado y
                 valorar una consulta, contacto o contratación según tus necesidades.</p>
-            <a href="#" class="btn btn-outline">Buscar Profesionales</a>
+            <a href="<?php echo home_url('/buscador'); ?>" class="btn btn-outline">Buscar Profesionales</a>
         </div>
         <div class="section-image-block">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/buscador.png" alt="Buscador"
@@ -80,7 +80,7 @@
             <p>Consulta conferencias, congresos, ferias, encuentros profesionales y fechas de inicio de cursos y
                 talleres, tanto online como presenciales, organizados o impartidos por profesionales de la salud a nivel
                 internacional.</p>
-            <a href="#" class="btn btn-outline">Ver Agenda</a>
+            <a href="<?php echo home_url('/agenda'); ?>" class="btn btn-outline">Ver Agenda</a>
         </div>
         <div class="section-image-block">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/agenda.png" alt="Agenda"
@@ -97,7 +97,7 @@
             <p>Formación en salud impartida por profesionales. Cursos estructurados en modalidad online, presencial o
                 combinada, con una plataforma de apoyo para el seguimiento, los contenidos y el aprendizaje continuo.
             </p>
-            <a href="#" class="btn btn-outline">Ver Cursos</a>
+            <a href="<?php echo home_url('/academia'); ?>" class="btn btn-outline">Ver Cursos</a>
         </div>
         <div class="section-image-block">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/academia.png" alt="Academia"
@@ -114,7 +114,7 @@
             <p>Compra cursos, accesos profesionales y productos de salud y bienestar. Desde la plataforma podrás acceder
                 a formación impartida por profesionales y, exclusivamente para profesionales, a espacios de
                 investigación y colaboración.</p>
-            <a href="#" class="btn btn-outline">Explorar Tienda</a>
+            <a href="<?php echo home_url('/tienda'); ?>" class="btn btn-outline">Explorar Tienda</a>
         </div>
         <div class="section-image-block">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tienda.png" alt="Tienda"
@@ -131,7 +131,7 @@
             <p>Espacio profesional y seguro, exclusivo para especialistas, donde crear grupos de trabajo de alcance
                 internacional, gestionar documentación clínica de casos no resueltos y colaborar en la investigación
                 aplicada y la mejora continua de tratamientos en enfermedades específicas.</p>
-            <a href="#" class="btn btn-outline">Área Científica</a>
+            <a href="<?php echo home_url('/investigacion'); ?>" class="btn btn-outline">Área Científica</a>
         </div>
         <div class="section-image-block">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/investigacion.svg" alt="Investigación"
@@ -147,7 +147,7 @@
         <p>Una plataforma de salud basada en la transparencia, el conocimiento y la autonomía profesional. Un espacio
             donde los profesionales ejercen con libertad y las personas pueden informarse, comprender y decidir con
             criterio.</p>
-        <a href="#" class="btn btn-outline">Más sobre nosotros</a>
+        <a href="<?php echo home_url('/nosotros'); ?>" class="btn btn-outline">Más sobre nosotros</a>
     </div>
 </section>
 

@@ -14,15 +14,15 @@
                 <h4>Plataforma</h4>
                 <div class="footer-subgrid">
                     <ul class="footer-links">
-                        <li><a href="#revista">Revista</a></li>
-                        <li><a href="#foro">Foro</a></li>
-                        <li><a href="#buscador">Buscador</a></li>
-                        <li><a href="#agenda">Agenda</a></li>
+                        <li><a href="<?php echo home_url('/revista'); ?>">Revista</a></li>
+                        <li><a href="<?php echo home_url('/foro'); ?>">Foro</a></li>
+                        <li><a href="<?php echo home_url('/buscador'); ?>">Buscador</a></li>
+                        <li><a href="<?php echo home_url('/agenda'); ?>">Agenda</a></li>
                     </ul>
                     <ul class="footer-links">
-                        <li><a href="#academia">Academia</a></li>
-                        <li><a href="#tienda">Tienda</a></li>
-                        <li><a href="#investigacion">Investigación</a></li>
+                        <li><a href="<?php echo home_url('/academia'); ?>">Academia</a></li>
+                        <li><a href="<?php echo home_url('/tienda'); ?>">Tienda</a></li>
+                        <li><a href="<?php echo home_url('/investigacion'); ?>">Investigación</a></li>
                     </ul>
                 </div>
             </div>
