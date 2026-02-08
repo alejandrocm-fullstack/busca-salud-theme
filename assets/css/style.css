@@ -795,3 +795,320 @@ img {
         margin-right: auto !important;
     }
 }
+
+/* ==========================================================================
+   REVISTA DIGITAL (Layout Premium)
+   ========================================================================== */
+
+.revista-container {
+    padding-bottom: 60px;
+    background-color: var(--color-bg);
+}
+
+.revista-main-header {
+    text-align: center;
+    padding: 60px 0 40px;
+}
+
+.revista-main-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    background: var(--color-accent-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.revista-main-header p {
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+}
+
+/* Sección por Categoría */
+.revista-section {
+    padding: 40px 0 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.revista-section:last-child {
+    border-bottom: none;
+}
+
+/* Cabecera de Categoría (Instagram Style) */
+.revista-cat-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.cat-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Borde estilo "Story" pero sutil */
+    padding: 2px;
+    background: white;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.revista-cat-header .cat-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin: 0;
+}
+
+/* Grid Layout: 1 Grande + 3 Pequeños */
+.revista-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    /* Columna grande + 3 pequeñas */
+    gap: 30px;
+    align-items: start;
+}
+
+/* --- Card Grande (Featured) --- */
+.revista-card-big {
+    grid-column: 1 / -1;
+    /* En móvil full width */
+    background: #fff;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    /* Layout horizontal para desktop */
+    flex-direction: column;
+    /* Empezamos vertical */
+}
+
+.revista-card-big .card-image {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.revista-card-big .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.revista-card-big:hover .card-image img {
+    transform: scale(1.05);
+}
+
+.revista-card-big .card-content {
+    padding: 30px;
+}
+
+.revista-card-big .card-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.revista-card-big .card-excerpt {
+    color: var(--color-text-light);
+    margin-bottom: 25px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Autor Block */
+.card-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+    box-shadow: var(--shadow-sm);
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-info .by {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.author-info .name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+}
+
+/* --- Card Pequeña y Layout Grid --- */
+
+/* Reestructuración del Grid para Desktop */
+@media (min-width: 992px) {
+    .revista-grid {
+        grid-template-columns: 2fr 1fr;
+        /* 2 columnas: Izq (Grande) - Der (Lista pequeños) */
+        gap: 40px;
+    }
+
+    .revista-card-big {
+        grid-column: span 1;
+        /* Ocupa la primera columna */
+        /* height: 100%; */
+    }
+
+    .revista-secondary-posts {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+/* Estilos Cards Pequeñas */
+.revista-card-small {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s;
+}
+
+.revista-card-small:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-image-small {
+    width: 100px;
+    /* Miniatura cuadrada fija */
+    height: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.card-image-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title-small {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.card-author-small {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+/* Banner Promocional */
+.revista-banner {
+    margin: 40px auto;
+    background: linear-gradient(90deg, #F1F5F9 0%, #E2E8F0 100%);
+    border-radius: var(--border-radius-lg);
+    padding: 40px;
+    text-align: center;
+    color: var(--color-text-light);
+    border: 1px dashed var(--color-border);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 991px) {
+    .revista-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .revista-secondary-posts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .revista-card-small {
+        /* En tablet/móvil mantenemos lista vertical para consistencia */
+    }
+}
+
+@media (max-width: 768px) {
+    .revista-main-header {
+        padding: 40px 0 20px;
+    }
+
+    .revista-main-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .revista-section {
+        padding: 20px 0 40px;
+    }
+
+    .cat-icon-wrapper {
+        width: 50px;
+        height: 50px;
+    }
+
+    .revista-cat-header .cat-title {
+        font-size: 1.5rem;
+    }
+
+    .revista-card-big .card-image {
+        height: 250px;
+    }
+
+    .revista-card-big .card-content {
+        padding: 20px;
+    }
+
+    .revista-card-big .card-title {
+        font-size: 1.4rem;
+    }
+}
