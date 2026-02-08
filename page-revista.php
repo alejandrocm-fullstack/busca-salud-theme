@@ -12,7 +12,7 @@ $categorias_revista = array(
     'nutricion' => array('name' => 'Nutrición', 'icon' => 'icon-nutricion.png'),
     'psicologia' => array('name' => 'Psicología', 'icon' => 'icon-psicologia.png'),
     'pediatria' => array('name' => 'Pediatría', 'icon' => 'icon-pediatria.png'),
-    'entrenamiento' => array('name' => 'Entrenamiento', 'icon' => 'icon-entrenamiento.png'),
+    // 'entrenamiento' => array('name' => 'Entrenamiento', 'icon' => 'icon-entrenamiento.png'), // Eliminado a petición del usuario
     'ginecologia' => array('name' => 'Ginecología', 'icon' => 'icon-ginecologia.png'),
     'dermatologia' => array('name' => 'Dermatología', 'icon' => 'icon-dermatologia.png'),
     'fisioterapia' => array('name' => 'Fisioterapia', 'icon' => 'icon-fisioterapia.png'),
@@ -33,10 +33,10 @@ $categorias_revista = array(
     foreach ($categorias_revista as $slug => $cat_info):
         $cat_counter++;
 
-        // Argumentos para obtener los últimos 4 posts de la categoría actual
+        // Argumentos para obtener los últimos 5 posts de la categoría actual
         $args = array(
             'category_name' => $slug,
-            'posts_per_page' => 4,
+            'posts_per_page' => 5,
             'post_status' => 'publish'
         );
         $query = new WP_Query($args);
@@ -143,7 +143,7 @@ $categorias_revista = array(
                 </div>
             <?php endif; ?>
 
-        <?php
+            <?php
         endif; // if have_posts
         wp_reset_postdata();
     endforeach;
