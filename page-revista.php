@@ -60,10 +60,14 @@ uasort($categorias_revista, function ($a, $b) {
         // Argumentos para obtener los últimos 5 posts de la categoría actual
         $args = array(
             'category_name' => $slug,
-            'posts_per_page' => 5,
+            'category_name' => $slug,
+            'posts_per_page' => 5, // Mostramos 5 (1 grande + 4 pequeños)
             'post_status' => 'publish'
         );
         $query = new WP_Query($args);
+
+        // Contar el total de posts en la categoría para saber si mostrar "Ver más"
+        $total_posts_in_cat = $query->found_posts;
 
         // Solo mostrar la sección si hay posts
         if ($query->have_posts()):
@@ -162,6 +166,19 @@ uasort($categorias_revista, function ($a, $b) {
 
                         <?php if ($query->post_count > 1): ?>
                         </div> <!-- Cierre .revista-secondary-posts -->
+                    <?php endif; ?>
+
+                    <?php
+                    // Si hay más posts de los que mostramos (5), añadimos la tarjeta "Ver más"
+                    if ($total_posts_in_cat > 5):
+                        ?>
+                        <article class="revista-card-small revista-see-more-card">
+                            <a href="<?php echo get_category_link(get_category_by_slug($slug)->term_id); ?>"
+                                class="see-more-link">
+                                <span class="see-more-text">Ver más de <?php echo $cat_info['name']; ?></span>
+                                <span class="see-more-icon">&rarr;</span>
+                            </a>
+                        </article>
                     <?php endif; ?>
 
                 </div> <!-- Cierre .revista-grid -->
