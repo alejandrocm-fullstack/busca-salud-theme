@@ -1080,7 +1080,7 @@ img {
 
 @media (max-width: 768px) {
     .revista-main-header {
-        padding: 40px 0 20px;
+        padding: 40px 32px 20px;
     }
 
     .revista-main-header h1 {
@@ -1088,7 +1088,7 @@ img {
     }
 
     .revista-section {
-        padding: 20px 0 40px;
+        padding: 20px 32px 40px;
     }
 
     .cat-icon-wrapper {

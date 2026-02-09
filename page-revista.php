@@ -89,10 +89,18 @@ $categorias_revista = array(
                                     <div class="card-excerpt"><?php the_excerpt(); ?></div>
 
                                     <div class="card-author">
-                                        <div class="author-avatar"><?php echo $author_avatar; ?></div>
+                                        <div class="author-avatar">
+                                            <a href="<?php echo get_author_posts_url($author_id); ?>">
+                                                <?php echo $author_avatar; ?>
+                                            </a>
+                                        </div>
                                         <div class="author-info">
                                             <span class="by">Por</span>
-                                            <span class="name"><?php echo $author_name; ?></span>
+                                            <span class="name">
+                                                <a href="<?php echo get_author_posts_url($author_id); ?>">
+                                                    <?php echo $author_name; ?>
+                                                </a>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +125,9 @@ $categorias_revista = array(
                                     <div class="card-content-small">
                                         <h4 class="card-title-small"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                         <div class="card-author-small">
-                                            <?php echo $author_name; ?>
+                                            <a href="<?php echo get_author_posts_url($author_id); ?>">
+                                                <?php echo $author_name; ?>
+                                            </a>
                                         </div>
                                     </div>
                                 </article>
@@ -134,14 +144,7 @@ $categorias_revista = array(
 
             </section>
 
-            <!-- Banner entre secciones (Ejemplo: cada 2 categorías) -->
-            <?php if ($cat_counter % 2 == 0): ?>
-                <div class="revista-banner container">
-                    <div class="banner-content">
-                        <h3>Publicidad / Banner Promocional</h3>
-                    </div>
-                </div>
-            <?php endif; ?>
+
 
             <?php
         endif; // if have_posts
