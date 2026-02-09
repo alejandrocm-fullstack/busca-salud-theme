@@ -17,6 +17,30 @@ $categorias_revista = array(
     'dermatologia' => array('name' => 'Dermatología', 'icon' => 'icon-dermatologia.png'),
     'fisioterapia' => array('name' => 'Fisioterapia', 'icon' => 'icon-fisioterapia.png'),
 );
+
+// NUEVO: Ordenar categorías por fecha del último post
+foreach ($categorias_revista as $slug => $info) {
+    // Obtener el último post de esta categoría para ver su fecha
+    $latest_post = get_posts(array(
+        'category_name' => $slug,
+        'posts_per_page' => 1,
+        'post_status' => 'publish',
+        'fields' => 'ids' // Solo necesitamos ID para ser más eficientes, aunque get_posts trae objetos por defecto si no
+    ));
+
+    // Si hay post, guardamos su fecha (timestamp), si no, fecha muy antigua (0)
+    if (!empty($latest_post)) {
+        // get_posts devuelve array de objetos WP_Post. Accedemos al primero.
+        $categorias_revista[$slug]['last_post_date'] = get_the_date('U', $latest_post[0]);
+    } else {
+        $categorias_revista[$slug]['last_post_date'] = 0;
+    }
+}
+
+// Función de comparación para ordenar de más reciente a más antiguo
+uasort($categorias_revista, function ($a, $b) {
+    return $b['last_post_date'] - $a['last_post_date'];
+});
 ?>
 
 <div class="revista-container">
