@@ -1268,11 +1268,13 @@ img {
 
 /* Adaptación de Tarjeta "Grande" para Archivo */
 .archive-card .card-image {
-    height: 250px;
-    /* Misma altura base que la grande, o ajustar */
+    height: 300px;
+    /* Aumentado a 300px para que destaque más */
     width: 100%;
     overflow: hidden;
     border-radius: var(--radius-lg);
+    margin-bottom: 20px;
+    /* Espacio extra */
 }
 
 .archive-card .card-image img {
@@ -1287,9 +1289,56 @@ img {
 }
 
 .archive-card .card-title {
-    font-size: 1.35rem;
-    /* Un poco más pequeño que la original gigante pero legible */
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    /* Título un poco más grande */
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+/* Ajustes de Autor en Archivo */
+.archive-card .card-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.archive-card .card-author img {
+    width: 45px;
+    /* Avatar más visible */
+    height: 45px;
+    border-radius: 50%;
+    /* Circular */
+    object-fit: cover;
+}
+
+.archive-card .author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.archive-card .author-label {
+    font-size: 0.7rem;
+    /* "POR" pequeño */
+    font-weight: 600;
+    color: var(--color-text-light);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.archive-card .author-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.archive-card .author-name:hover {
+    color: var(--color-primary);
+    /* Color al pasar el ratón */
 }
 
 @media (max-width: 768px) {
@@ -1299,7 +1348,7 @@ img {
     }
 
     .archive-card .card-image {
-        height: 200px;
+        height: 220px;
     }
 }
 
