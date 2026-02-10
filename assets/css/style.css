@@ -1,4 +1,4 @@
-/* Google Fonts */
+﻿/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
@@ -12,7 +12,7 @@
     /* Sapphire Blue - Profesionalidad */
     --color-primary-dark: #0A3D8F;
     --color-secondary: #06B6D4;
-    /* Cyan - Innovación */
+    /* Cyan - InnovaciÃ³n */
 
     --color-accent-gradient: linear-gradient(135deg, #0F52BA 0%, #06B6D4 100%);
 
@@ -78,7 +78,7 @@ img {
     padding: 0 24px;
 }
 
-/* --- Buttons (Diseño Solicitado) --- */
+/* --- Buttons (DiseÃ±o Solicitado) --- */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -93,7 +93,7 @@ img {
     border: none;
 }
 
-/* Botón sólido (Búsqueda / Profesional) */
+/* BotÃ³n sÃ³lido (BÃºsqueda / Profesional) */
 .btn-primary {
     background: var(--color-primary);
     color: white;
@@ -105,7 +105,7 @@ img {
     box-shadow: 0 6px 20px rgba(15, 82, 186, 0.23);
 }
 
-/* Botón Outline (Registro) */
+/* BotÃ³n Outline (Registro) */
 .btn-outline {
     background: transparent;
     color: var(--color-primary);
@@ -116,7 +116,7 @@ img {
     background: rgba(15, 82, 186, 0.05);
 }
 
-/* Botón Gradiente (CTA Principal) */
+/* BotÃ³n Gradiente (CTA Principal) */
 .btn-gradient {
     background: var(--color-accent-gradient);
     color: white;
@@ -232,7 +232,7 @@ img {
     max-width: 700px;
 }
 
-/* Contenedor de Botones Hero - DISEÑO SOLICITADO */
+/* Contenedor de Botones Hero - DISEÃ‘O SOLICITADO */
 .hero-buttons {
     display: flex;
     gap: 20px;
@@ -410,7 +410,7 @@ img {
         align-items: center;
         /* Centrado vertical */
         padding: 20px 0;
-        /* Padding más equilibrado */
+        /* Padding mÃ¡s equilibrado */
     }
 
     /* Fix para que el texto no toque bordes */
@@ -423,14 +423,14 @@ img {
         height: auto;
         position: relative;
         padding-top: 0;
-        /* Corrección: Quitamos el padding extra para centrar verticalmente */
+        /* CorrecciÃ³n: Quitamos el padding extra para centrar verticalmente */
     }
 
     .nav-menu {
         display: none;
     }
 
-    /* Ajustes específicos para Móvil - Reducción de Espacios */
+    /* Ajustes especÃ­ficos para MÃ³vil - ReducciÃ³n de Espacios */
     .section {
         padding: 40px 0;
         /* Padding vertical muy reducido */
@@ -458,19 +458,19 @@ img {
     .section-text-block h2 {
         font-size: 1.8rem;
         margin-bottom: 12px;
-        /* Título pegado al texto */
+        /* TÃ­tulo pegado al texto */
         line-height: 1.2;
     }
 
     .section-text-block p {
         font-size: 1rem;
         margin-bottom: 20px;
-        /* Párrafo pegado al botón */
+        /* PÃ¡rrafo pegado al botÃ³n */
     }
 
     .hero h1 {
         font-size: 2.2rem;
-        /* Título hero más compacto */
+        /* TÃ­tulo hero mÃ¡s compacto */
         margin-bottom: 15px;
     }
 
@@ -638,7 +638,7 @@ img {
     align-items: center;
     justify-content: center;
     z-index: 2001;
-    /* Asegurar que el botón esté por encima si se solapa */
+    /* Asegurar que el botÃ³n estÃ© por encima si se solapa */
 }
 
 .mobile-nav {
@@ -723,7 +723,7 @@ img {
         height: 200px !important;
     }
 
-    /* Ajuste específico para que la PORTADA rompa el padding y sea full-width */
+    /* Ajuste especÃ­fico para que la PORTADA rompa el padding y sea full-width */
     .um-profile .um-cover,
     .um-profile .um-cover-e {
         margin-left: -32px !important;
@@ -733,22 +733,22 @@ img {
         border-radius: 0 !important;
         /* Quitar bordes redondeados si los hubiera para que pegue a los lados */
 
-        /* CORRECCIÓN CRÍTICA: Altura reducida para que no se vea "anchada" (estirada hacia abajo) */
+        /* CORRECCIÃ“N CRÃTICA: Altura reducida para que no se vea "anchada" (estirada hacia abajo) */
         height: 120px !important;
         min-height: 0 !important;
         /* Anular min-height global */
     }
 
-    /* Foto de perfil en móvil un poco más pequeña */
+    /* Foto de perfil en mÃ³vil un poco mÃ¡s pequeÃ±a */
     .um-profile-photo a.um-profile-photo-img {
         width: 100px !important;
-        /* Un pelín más pequeña para equilibrar con la portada nueva */
+        /* Un pelÃ­n mÃ¡s pequeÃ±a para equilibrar con la portada nueva */
         height: 100px !important;
         top: -50px !important;
     }
 }
 
-/* Ocultar Título de Página "Usuario" / "Cuenta" SOLO en páginas de Ultimate Member */
+/* Ocultar TÃ­tulo de PÃ¡gina "Usuario" / "Cuenta" SOLO en pÃ¡ginas de Ultimate Member */
 .um-page .entry-title,
 .um-page h1.page-title,
 .page-template-default.um-page h1 {
@@ -756,18 +756,18 @@ img {
 }
 
 
-/* Ajuste Logo Móvil (Dos líneas IMPONENTES) */
+/* Ajuste Logo MÃ³vil (Dos lÃ­neas IMPONENTES) */
 @media (max-width: 768px) {
     .logo-container {
         max-width: 80%;
-        /* Aprovechamos más ancho */
+        /* Aprovechamos mÃ¡s ancho */
     }
 
     .logo-text {
         font-size: 1.35rem;
-        /* ¡Más grande! */
+        /* Â¡MÃ¡s grande! */
         white-space: normal;
-        /* Permite dos líneas */
+        /* Permite dos lÃ­neas */
         line-height: 1.05;
         /* Muy compacto */
         display: block;
@@ -776,12 +776,12 @@ img {
 
     .logo-container img {
         height: 52px;
-        /* Logo más grande acorde al texto */
+        /* Logo mÃ¡s grande acorde al texto */
         align-self: center;
     }
 }
 
-/* Fix GLOBAL para espaciado lateral en móviles (Todo Ultimate Member) */
+/* Fix GLOBAL para espaciado lateral en mÃ³viles (Todo Ultimate Member) */
 @media (max-width: 768px) {
 
     /* Aplicar a cualquier elemento contenedor de Ultimate Member */
@@ -825,7 +825,7 @@ img {
     color: var(--color-text-light);
 }
 
-/* Sección por Categoría */
+/* SecciÃ³n por CategorÃ­a */
 .revista-section {
     padding: 40px 0 60px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -835,7 +835,7 @@ img {
     border-bottom: none;
 }
 
-/* Cabecera de Categoría (Instagram Style) */
+/* Cabecera de CategorÃ­a (Instagram Style) */
 .revista-cat-header {
     display: flex;
     align-items: center;
@@ -872,11 +872,11 @@ img {
     margin: 0;
 }
 
-/* Grid Layout: 1 Grande + 3 Pequeños */
+/* Grid Layout: 1 Grande + 3 PequeÃ±os */
 .revista-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    /* Columna grande + 3 pequeñas */
+    /* Columna grande + 3 pequeÃ±as */
     gap: 30px;
     align-items: start;
 }
@@ -884,7 +884,7 @@ img {
 /* --- Card Grande (Featured) --- */
 .revista-card-big {
     grid-column: 1 / -1;
-    /* En móvil full width */
+    /* En mÃ³vil full width */
     background: #fff;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
@@ -974,19 +974,19 @@ img {
     color: var(--color-text-main);
 }
 
-/* Hover Específico para Card Grande */
+/* Hover EspecÃ­fico para Card Grande */
 .revista-card-big .card-title a:hover,
 .revista-card-big .author-info .name a:hover {
     color: var(--color-primary);
 }
 
-/* --- Card Pequeña y Layout Grid --- */
+/* --- Card PequeÃ±a y Layout Grid --- */
 
-/* Reestructuración del Grid para Desktop */
+/* ReestructuraciÃ³n del Grid para Desktop */
 @media (min-width: 992px) {
     .revista-grid {
         grid-template-columns: 2fr 1fr;
-        /* 2 columnas: Izq (Grande) - Der (Lista pequeños) */
+        /* 2 columnas: Izq (Grande) - Der (Lista pequeÃ±os) */
         gap: 40px;
     }
 
@@ -1003,7 +1003,7 @@ img {
     }
 }
 
-/* Estilos Cards Pequeñas */
+/* Estilos Cards PequeÃ±as */
 .revista-card-small {
     display: flex;
     gap: 15px;
@@ -1024,7 +1024,7 @@ img {
     transform: scale(1.05);
 }
 
-/* HOVER ESPECÍFICO: Título y Autor cambian SOLO al pasarles por encima */
+/* HOVER ESPECÃFICO: TÃ­tulo y Autor cambian SOLO al pasarles por encima */
 /* Reseteamos cambio de color al hacer hover en la card para asegurar independencia */
 .revista-card-small:hover .card-title-small a {
     color: inherit;
@@ -1106,7 +1106,7 @@ img {
     }
 
     .revista-card-small {
-        /* En tablet/móvil mantenemos lista vertical para consistencia */
+        /* En tablet/mÃ³vil mantenemos lista vertical para consistencia */
     }
 }
 
@@ -1145,7 +1145,7 @@ img {
     }
 }
 
-/* --- Tarjeta "Ver más" (Rediseño Elegante) --- */
+/* --- Tarjeta "Ver mÃ¡s" (RediseÃ±o Elegante) --- */
 .revista-see-more-card {
     justify-content: center;
     align-items: center;
@@ -1199,9 +1199,9 @@ img {
     justify-content: center;
     color: var(--color-text-main);
     font-weight: 500;
-    /* Peso visual más ligero */
+    /* Peso visual mÃ¡s ligero */
     font-size: 0.95rem;
-    /* Fuente más pequeña */
+    /* Fuente mÃ¡s pequeÃ±a */
     padding: 15px;
     transition: color 0.3s ease;
 }
@@ -1222,7 +1222,7 @@ img {
     color: var(--color-primary);
 }
 
-/* --- Estilos para la página de categoría (Archivo) --- */
+/* --- Estilos para la pÃ¡gina de categorÃ­a (Archivo) --- */
 .category-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1230,7 +1230,7 @@ img {
 }
 
 .category-card {
-    /* Ajustes para que la card pequeña funcione bien en grid */
+    /* Ajustes para que la card pequeÃ±a funcione bien en grid */
     height: 100%;
     align-items: flex-start;
 }
@@ -1258,7 +1258,7 @@ img {
     transition: all 0.2s;
 }
 
-/* --- Grid de Archivo (Categorías) - 2 Columnas --- */
+/* --- Grid de Archivo (CategorÃ­as) - 2 Columnas --- */
 .category-grid-2col {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1266,10 +1266,10 @@ img {
     margin-bottom: 40px;
 }
 
-/* Adaptación de Tarjeta "Grande" para Archivo */
+/* AdaptaciÃ³n de Tarjeta "Grande" para Archivo */
 .archive-card .card-image {
     height: 300px;
-    /* Aumentado a 300px para que destaque más */
+    /* Aumentado a 300px para que destaque mÃ¡s */
     width: 100%;
     overflow: hidden;
     border-radius: var(--radius-lg);
@@ -1290,7 +1290,7 @@ img {
 
 .archive-card .card-title {
     font-size: 1.5rem;
-    /* Título un poco más grande */
+    /* TÃ­tulo un poco mÃ¡s grande */
     margin-bottom: 12px;
     line-height: 1.3;
 }
@@ -1305,7 +1305,7 @@ img {
 
 .archive-card .card-author img {
     width: 45px;
-    /* Avatar más visible */
+    /* Avatar mÃ¡s visible */
     height: 45px;
     border-radius: 50%;
     /* Circular */
@@ -1320,7 +1320,7 @@ img {
 
 .archive-card .author-label {
     font-size: 0.7rem;
-    /* "POR" pequeño */
+    /* "POR" pequeÃ±o */
     font-weight: 600;
     color: var(--color-text-light);
     letter-spacing: 1px;
@@ -1338,13 +1338,13 @@ img {
 
 .archive-card .author-name:hover {
     color: var(--color-primary);
-    /* Color al pasar el ratón */
+    /* Color al pasar el ratÃ³n */
 }
 
 @media (max-width: 768px) {
     .category-grid-2col {
         grid-template-columns: 1fr;
-        /* 1 columna en móvil */
+        /* 1 columna en mÃ³vil */
     }
 
     .archive-card .card-image {
@@ -1358,3 +1358,545 @@ img {
     color: #fff;
     border-color: var(--color-primary);
 }
+
+/* =========================================
+   SINGLE POST (Revista Interior)
+   ========================================= */
+
+.single-hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+    background: #fff;
+}
+
+.single-header-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.single-category a {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+    background: rgba(var(--color-primary-rgb), 0.1); /* Fondo sutil si existe variable, si no blanco */
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.single-title {
+    font-size: 3.5rem; /* Título muy grande y elegante */
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    color: var(--color-text-main);
+    letter-spacing: -1px;
+}
+
+.single-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    color: var(--color-text-light);
+    font-size: 1rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: 30px;
+    display: inline-flex; /* Para que la línea no ocupe todo */
+    width: 100%;
+    max-width: 600px;
+}
+
+.author-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-meta img {
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: var(--shadow-sm);
+    width: 60px; /* Forzamos tamaño aquí también por si acaso */
+    height: 60px;
+}
+
+.meta-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.meta-info .by {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.meta-info .author-name a {
+    font-weight: 700;
+    color: var(--color-text-main);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.date-meta {
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.single-featured-image {
+    margin-top: 60px;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg); /* Sombra más fuerte para dar profundidad */
+    max-width: 1200px; /* Ancho máximo controlado para que no se desmadre en pantallas ultra anchas */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.single-featured-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contenido del Artículo */
+.single-content {
+    max-width: 740px; /* Ancho de lectura ideal (60-80 caracteres) */
+    margin: 80px auto;
+    font-size: 1.2rem; /* Texto base grande para lectura cómoda */
+    line-height: 1.8;
+    color: #334155;
+    font-family: var(--font-body); /* Usar la fuente del tema, o una serif específica si se desea */
+}
+
+.content-body p {
+    margin-bottom: 30px;
+}
+
+.content-body h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    color: var(--color-text-main);
+    letter-spacing: -0.5px;
+}
+
+.content-body h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.content-body ul, .content-body ol {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.content-body li {
+    margin-bottom: 10px;
+}
+
+.content-body blockquote {
+    border-left: 4px solid var(--color-primary);
+    padding-left: 30px;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--color-text-main);
+    margin: 50px 0;
+    font-weight: 500;
+    background: linear-gradient(to right, rgba(var(--color-primary-rgb), 0.05), transparent);
+    padding: 30px;
+    border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+}
+
+/* Caja de Autor al final */
+.single-author-box {
+    background: #fff;
+    border-radius: var(--border-radius-lg);
+    padding: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    border: 1px solid var(--color-border); /* Sutil */
+    box-shadow: var(--shadow-md);
+    margin-top: 80px;
+    margin-bottom: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author-box-avatar img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid #f1f5f9;
+}
+
+.author-box-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.author-bio {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--color-text-light);
+    margin-bottom: 20px;
+}
+
+.author-link {
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.author-link:hover {
+    text-decoration: underline;
+}
+
+/* Tags */
+.single-tags {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.single-tags a {
+    background: #f1f5f9;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.single-tags a:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Navegación */
+.single-navigation {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+}
+
+.nav-previous a, .nav-next a {
+    font-weight: 700;
+    color: var(--color-text-main);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-previous a:hover, .nav-next a:hover {
+    color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .single-title {
+        font-size: 2.5rem;
+    }
+    
+    .single-meta {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .single-author-box {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .single-content {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+}
+
+
+
+/* =========================================
+   RELATED POSTS (Artículos Relacionados)
+   ========================================= */
+
+.related-posts-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--color-border);
+}
+
+.related-posts-section .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.related-card {
+    background: #fff;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--color-border);
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.related-thumb {
+    display: block;
+    height: 180px;
+    overflow: hidden;
+}
+
+.related-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.related-card:hover .related-thumb img {
+    transform: scale(1.05);
+}
+
+.related-content {
+    padding: 20px;
+}
+
+.related-content h4 {
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+    line-height: 1.4;
+}
+
+.related-content h4 a {
+    color: var(--color-text-main);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.related-content h4 a:hover {
+    color: var(--color-primary);
+}
+
+.related-date {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
+/* =========================================
+   COMMENTS SECTION (Estilo Hilo Limpio)
+   ========================================= */
+
+#comments {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--color-border);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comments-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-body {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 20px;
+    border: 1px solid var(--color-border);
+    position: relative;
+}
+
+.comment-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.comment-author {
+    font-weight: 700;
+    color: var(--color-text-main);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment-author img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.comment-metadata a {
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+
+.comment-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #475569;
+}
+
+.reply {
+    text-align: right;
+}
+
+.comment-reply-link {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #e2e8f0;
+    color: var(--color-text-main);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.comment-reply-link:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+/* Formulario de Comentarios */
+.comment-respond {
+    background: #fff;
+    padding: 40px;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    margin-top: 60px;
+    border: 1px solid var(--color-border);
+}
+
+.comment-reply-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.comment-form p {
+    margin-bottom: 20px;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: var(--border-radius-sm);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    background: #f8fafc;
+}
+
+.form-submit .submit {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.form-submit .submit:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Respuestas anidadas */
+.children {
+    list-style: none;
+    padding-left: 20px;
+    border-left: 2px solid #e2e8f0;
+    margin-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .related-posts-grid {
+        grid-template-columns: 1fr;
+    }
+    .comment-body {
+        padding: 20px;
+    }
+}
+
+
+
