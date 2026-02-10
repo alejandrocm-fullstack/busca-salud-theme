@@ -105,7 +105,7 @@ uasort($categorias_revista, function ($a, $b) {
                                 <div class="card-image">
                                     <a href="<?php the_permalink(); ?>">
                                         <?php if (has_post_thumbnail()): ?>
-                                            <?php the_post_thumbnail('full'); ?>
+                                            <?php the_post_thumbnail('large'); ?>
                                         <?php else: ?>
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/default-post.png"
                                                 alt="<?php the_title(); ?>">
@@ -143,7 +143,7 @@ uasort($categorias_revista, function ($a, $b) {
                                     <div class="card-image-small">
                                         <a href="<?php the_permalink(); ?>">
                                             <?php if (has_post_thumbnail()): ?>
-                                                <?php the_post_thumbnail('medium_large'); ?>
+                                                <?php the_post_thumbnail('medium'); ?>
                                             <?php else: ?>
                                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/default-post.png"
                                                     alt="<?php the_title(); ?>">
