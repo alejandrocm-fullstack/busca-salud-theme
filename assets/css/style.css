@@ -1154,7 +1154,10 @@ img {
     border: 1px solid var(--color-border);
     /* Borde sutil, no dashed */
     cursor: pointer;
-    min-height: 80px;
+    min-height: auto;
+    /* Eliminamos altura mínima fija */
+    padding: 10px;
+    /* Padding mínimo */
     /* Más compacto/pequeño */
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
