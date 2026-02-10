@@ -1025,9 +1025,24 @@ img {
 }
 
 /* HOVER ESPECÍFICO: Título y Autor cambian SOLO al pasarles por encima */
-.card-title-small a:hover,
+/* Reseteamos cambio de color al hacer hover en la card para asegurar independencia */
+.revista-card-small:hover .card-title-small a {
+    color: inherit;
+    /* O var(--color-text-main) */
+}
+
+.revista-card-small:hover .card-author-small a {
+    color: inherit;
+    /* O var(--color-text-light) */
+}
+
+/* Aplicamos color SOLO al hover directo en el enlace */
+.card-title-small a:hover {
+    color: var(--color-primary) !important;
+}
+
 .card-author-small a:hover {
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
 }
 
 .card-image-small {
