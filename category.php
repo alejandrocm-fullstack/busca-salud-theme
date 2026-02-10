@@ -62,12 +62,18 @@ $category = get_queried_object();
                                 <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
                             </div>
                             <div class="card-author">
-                                <?php echo get_avatar($author_id, 60); ?>
-                                <div class="author-info">
-                                    <span class="author-label">POR</span>
-                                    <a href="<?php echo get_author_posts_url($author_id); ?>" class="author-name">
-                                        <?php echo $author_name; ?>
+                                <div class="author-avatar">
+                                    <a href="<?php echo get_author_posts_url($author_id); ?>">
+                                        <?php echo get_avatar($author_id, 60); ?>
                                     </a>
+                                </div>
+                                <div class="author-info">
+                                    <span class="by">Por</span>
+                                    <span class="name">
+                                        <a href="<?php echo get_author_posts_url($author_id); ?>">
+                                            <?php echo $author_name; ?>
+                                        </a>
+                                    </span>
                                 </div>
                             </div>
                         </div>
