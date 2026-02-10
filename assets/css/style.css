@@ -1154,13 +1154,26 @@ img {
     border: 1px solid var(--color-border);
     /* Borde sutil, no dashed */
     cursor: pointer;
-    min-height: auto;
-    /* Eliminamos altura mínima fija */
-    padding: 10px;
-    /* Padding mínimo */
-    /* Más compacto/pequeño */
+    height: 50px;
+    /* Altura fija "la mitad de alto" */
+    padding: 0 15px;
+    /* Padding horizontal solo */
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
+    margin-top: -5px;
+    /* Ajuste visual para subir */
+}
+
+.see-more-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--color-text-main);
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+    /* Reducimos ligeramente la fuente */
 }
 
 .revista-see-more-card:hover {
