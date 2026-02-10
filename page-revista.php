@@ -168,7 +168,8 @@ uasort($categorias_revista, function ($a, $b) {
                         // Si hay más posts de los que mostramos (5), añadimos la tarjeta "Ver más"
                         if ($total_posts_in_cat > 5):
                             ?>
-                            <article class="revista-card-small revista-see-more-card">
+                            <article class="revista-card-small revista-see-more-card"
+                                style="height: 50px !important; min-height: 50px !important; padding: 0 15px !important; flex: 0 0 50px !important;">
                                 <a href="<?php echo get_category_link(get_category_by_slug($slug)->term_id); ?>"
                                     class="see-more-link">
                                     <span class="see-more-text">Ver más de <?php echo $cat_info['name']; ?></span>

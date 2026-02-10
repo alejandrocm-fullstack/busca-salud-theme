@@ -1150,18 +1150,21 @@ img {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    /* Fondo blanco como las demás */
     border: 1px solid var(--color-border);
-    /* Borde sutil, no dashed */
     cursor: pointer;
-    height: 50px;
-    /* Altura fija "la mitad de alto" */
-    padding: 0 15px;
-    /* Padding horizontal solo */
+
+    /* FORZADO AGRESIVO DE ALTURA */
+    height: 50px !important;
+    min-height: 0 !important;
+    max-height: 50px !important;
+    padding: 0 15px !important;
+
+    /* Evitar estiramiento en Flexbox */
+    flex: 0 0 50px !important;
+
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
     margin-top: -5px;
-    /* Ajuste visual para subir */
 }
 
 .see-more-link {
@@ -1172,7 +1175,9 @@ img {
     color: var(--color-text-main);
     font-weight: 600;
     transition: color 0.3s ease;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
+    line-height: normal !important;
+    margin: 0 !important;
     /* Reducimos ligeramente la fuente */
 }
 
