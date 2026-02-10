@@ -61,7 +61,7 @@ uasort($categorias_revista, function ($a, $b) {
         $args = array(
             'category_name' => $slug,
             'category_name' => $slug,
-            'posts_per_page' => 4, // Mostramos 4 (1 grande + 3 pequeños)
+            'posts_per_page' => 5, // Mostramos 5 (1 grande + 4 pequeños)
             'post_status' => 'publish'
         );
         $query = new WP_Query($args);
@@ -137,7 +137,7 @@ uasort($categorias_revista, function ($a, $b) {
                             <!-- Contenedor para los posts secundarios -->
                             <div class="revista-secondary-posts">
 
-                            <?php else: // Posts 2, 3, 4 (Pequeños) ?>
+                            <?php else: // Posts 2, 3, 4, 5 (Pequeños) ?>
 
                                 <article class="revista-card-small">
                                     <div class="card-image-small">
@@ -165,8 +165,8 @@ uasort($categorias_revista, function ($a, $b) {
                         <?php endwhile; ?>
 
                         <?php
-                        // Si hay más posts de los que mostramos (4), añadimos la tarjeta "Ver más"
-                        if ($total_posts_in_cat > 4):
+                        // Si hay más posts de los que mostramos (5), añadimos la tarjeta "Ver más"
+                        if ($total_posts_in_cat > 5):
                             ?>
                             <article class="revista-card-small revista-see-more-card">
                                 <a href="<?php echo get_category_link(get_category_by_slug($slug)->term_id); ?>"
