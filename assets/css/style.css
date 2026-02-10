@@ -974,6 +974,12 @@ img {
     color: var(--color-text-main);
 }
 
+/* Hover Específico para Card Grande */
+.revista-card-big .card-title a:hover,
+.revista-card-big .author-info .name a:hover {
+    color: var(--color-primary);
+}
+
 /* --- Card Pequeña y Layout Grid --- */
 
 /* Reestructuración del Grid para Desktop */
@@ -1018,8 +1024,9 @@ img {
     transform: scale(1.05);
 }
 
-.revista-card-small:hover .card-title-small a,
-.revista-card-small:hover .card-author-small a {
+/* HOVER ESPECÍFICO: Título y Autor cambian SOLO al pasarles por encima */
+.card-title-small a:hover,
+.card-author-small a:hover {
     color: var(--color-primary);
 }
 
@@ -1123,45 +1130,60 @@ img {
     }
 }
 
-/* --- Tarjeta "Ver más" --- */
+/* --- Tarjeta "Ver más" (Rediseño Elegante) --- */
 .revista-see-more-card {
     justify-content: center;
     align-items: center;
-    background-color: #f8fafc;
-    /* Un tono ligeramente diferente para destacar */
-    border: 2px dashed var(--color-border);
+    background-color: #fff;
+    /* Fondo blanco como las demás */
+    border: 1px solid var(--color-border);
+    /* Borde sutil, no dashed */
     cursor: pointer;
-    min-height: 132px;
-    /* Altura aproximada de las otras cards pequeñas */
+    min-height: 80px;
+    /* Más compacto/pequeño */
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
 }
 
 .revista-see-more-card:hover {
-    background-color: #fff;
-    border-color: var(--color-primary);
-    transform: translateY(-3px);
+    background-color: #fafafa;
+    border-color: var(--color-border);
+    /* No cambiar borde a azul */
+    transform: none;
+    /* Sin movimiento hacia arriba */
+    box-shadow: var(--shadow-md);
 }
 
 .see-more-link {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
     height: 100%;
     justify-content: center;
     color: var(--color-text-main);
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 20px;
+    font-weight: 500;
+    /* Peso visual más ligero */
+    font-size: 0.95rem;
+    /* Fuente más pequeña */
+    padding: 15px;
+    transition: color 0.3s ease;
 }
 
 .see-more-icon {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     transition: transform 0.3s ease;
+    color: var(--color-text-light);
+}
+
+/* Hover solo en el texto/icono al pasar por encima de la tarjeta o del enlace */
+.revista-see-more-card:hover .see-more-link {
     color: var(--color-primary);
 }
 
 .revista-see-more-card:hover .see-more-icon {
-    transform: translateX(5px);
+    transform: translateX(4px);
+    color: var(--color-primary);
 }
 
 /* --- Estilos para la página de categoría (Archivo) --- */
