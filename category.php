@@ -33,7 +33,7 @@ $category = get_queried_object();
 
         <?php if (have_posts()): ?>
 
-            <div class="category-grid">
+            <div class="category-grid-2col">
                 <?php while (have_posts()):
                     the_post(); ?>
 
@@ -43,28 +43,32 @@ $category = get_queried_object();
                     $author_name = get_the_author();
                     ?>
 
-                    <article class="revista-card-small category-card">
-                        <div class="card-image-small">
+                    <article class="revista-card-big archive-card">
+                        <div class="card-image">
                             <a href="<?php the_permalink(); ?>">
                                 <?php if (has_post_thumbnail()): ?>
-                                    <?php the_post_thumbnail('medium'); ?>
+                                    <?php the_post_thumbnail('large'); ?>
                                 <?php else: ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/default-post.png"
                                         alt="<?php the_title(); ?>">
                                 <?php endif; ?>
                             </a>
                         </div>
-                        <div class="card-content-small">
-                            <h4 class="card-title-small"><a href="<?php the_permalink(); ?>">
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
-                                </a></h4>
-                            <div class="card-excerpt-small">
-                                <?php echo wp_trim_words(get_the_excerpt(), 15, '...'); ?>
+                                </a></h3>
+                            <div class="card-excerpt">
+                                <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
                             </div>
-                            <div class="card-author-small" style="margin-top: 8px;">
-                                <a href="<?php echo get_author_posts_url($author_id); ?>">
-                                    <?php echo $author_name; ?>
-                                </a>
+                            <div class="card-author">
+                                <?php echo get_avatar($author_id, 30); ?>
+                                <div class="author-info">
+                                    <span class="author-label">POR</span>
+                                    <a href="<?php echo get_author_posts_url($author_id); ?>" class="author-name">
+                                        <?php echo $author_name; ?>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </article>
