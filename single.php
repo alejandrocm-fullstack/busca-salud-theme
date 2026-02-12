@@ -41,9 +41,6 @@ get_header(); ?>
                                 </span>
                             </div>
                         </div>
-                        <div class="date-meta">
-                            <?php echo get_the_date('j F, Y'); ?>
-                        </div>
                     </div>
                 </div>
             </div>

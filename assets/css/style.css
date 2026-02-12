@@ -1404,7 +1404,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    /* gap: 40px; Eliminado al quitar la fecha */
     margin-top: 15px;
     /* Reducido de 30px a 15px */
     color: var(--color-text-light);
@@ -1485,7 +1485,8 @@ img {
 .single-content {
     max-width: 740px;
     /* Ancho de lectura ideal (60-80 caracteres) */
-    margin: 80px auto;
+    margin: 30px auto;
+    /* Reducido de 80px a 30px para igualar espacios */
     font-size: 1.2rem;
     /* Texto base grande para lectura cómoda */
     line-height: 1.8;
