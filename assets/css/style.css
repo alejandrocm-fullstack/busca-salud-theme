@@ -1383,15 +1383,17 @@ img {
     text-decoration: none;
     margin-bottom: 20px;
     display: inline-block;
-    background: rgba(var(--color-primary-rgb), 0.1); /* Fondo sutil si existe variable, si no blanco */
+    background: rgba(var(--color-primary-rgb), 0.1);
+    /* Fondo sutil si existe variable, si no blanco */
     padding: 5px 12px;
     border-radius: 20px;
 }
 
 .single-title {
-    font-size: 3.5rem; /* Título muy grande y elegante */
+    font-size: 2.5rem;
+    /* Título ajustado para una línea */
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.2;
     margin-bottom: 30px;
     color: var(--color-text-main);
     letter-spacing: -1px;
@@ -1407,7 +1409,8 @@ img {
     font-size: 1rem;
     border-top: 1px solid var(--color-border);
     padding-top: 30px;
-    display: inline-flex; /* Para que la línea no ocupe todo */
+    display: inline-flex;
+    /* Para que la línea no ocupe todo */
     width: 100%;
     max-width: 600px;
 }
@@ -1422,7 +1425,8 @@ img {
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: var(--shadow-sm);
-    width: 60px; /* Forzamos tamaño aquí también por si acaso */
+    width: 60px;
+    /* Forzamos tamaño aquí también por si acaso */
     height: 60px;
 }
 
@@ -1455,8 +1459,10 @@ img {
     margin-top: 60px;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-lg); /* Sombra más fuerte para dar profundidad */
-    max-width: 1200px; /* Ancho máximo controlado para que no se desmadre en pantallas ultra anchas */
+    box-shadow: var(--shadow-lg);
+    /* Sombra más fuerte para dar profundidad */
+    max-width: 1200px;
+    /* Ancho máximo controlado para que no se desmadre en pantallas ultra anchas */
     margin-left: auto;
     margin-right: auto;
 }
@@ -1465,16 +1471,23 @@ img {
     width: 100%;
     height: auto;
     display: block;
+    aspect-ratio: 21 / 9;
+    /* Relación de aspecto cinematográfica */
+    object-fit: cover;
+    /* Recorte inteligente */
 }
 
 /* Contenido del Artículo */
 .single-content {
-    max-width: 740px; /* Ancho de lectura ideal (60-80 caracteres) */
+    max-width: 740px;
+    /* Ancho de lectura ideal (60-80 caracteres) */
     margin: 80px auto;
-    font-size: 1.2rem; /* Texto base grande para lectura cómoda */
+    font-size: 1.2rem;
+    /* Texto base grande para lectura cómoda */
     line-height: 1.8;
     color: #334155;
-    font-family: var(--font-body); /* Usar la fuente del tema, o una serif específica si se desea */
+    font-family: var(--font-body);
+    /* Usar la fuente del tema, o una serif específica si se desea */
 }
 
 .content-body p {
@@ -1497,7 +1510,8 @@ img {
     margin-bottom: 20px;
 }
 
-.content-body ul, .content-body ol {
+.content-body ul,
+.content-body ol {
     margin-bottom: 30px;
     padding-left: 20px;
 }
@@ -1527,7 +1541,8 @@ img {
     display: flex;
     gap: 40px;
     align-items: center;
-    border: 1px solid var(--color-border); /* Sutil */
+    border: 1px solid var(--color-border);
+    /* Sutil */
     box-shadow: var(--shadow-md);
     margin-top: 80px;
     margin-bottom: 60px;
@@ -1606,7 +1621,8 @@ img {
     padding: 0 20px;
 }
 
-.nav-previous a, .nav-next a {
+.nav-previous a,
+.nav-next a {
     font-weight: 700;
     color: var(--color-text-main);
     text-decoration: none;
@@ -1617,7 +1633,8 @@ img {
     gap: 10px;
 }
 
-.nav-previous a:hover, .nav-next a:hover {
+.nav-previous a:hover,
+.nav-next a:hover {
     color: var(--color-primary);
 }
 
@@ -1626,18 +1643,18 @@ img {
     .single-title {
         font-size: 2.5rem;
     }
-    
+
     .single-meta {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .single-author-box {
         flex-direction: column;
         text-align: center;
         padding: 30px;
     }
-    
+
     .single-content {
         font-size: 1.1rem;
         padding: 0 20px;
@@ -1893,10 +1910,8 @@ img {
     .related-posts-grid {
         grid-template-columns: 1fr;
     }
+
     .comment-body {
         padding: 20px;
     }
 }
-
-
-
