@@ -93,6 +93,18 @@ $category = get_queried_object();
                 ?>
             </div>
 
+            <!-- Botón Volver al Inicio -->
+            <div class="return-button-wrapper"
+                style="display: flex; justify-content: center; margin-top: 40px; margin-bottom: 20px;">
+                <article class="revista-card-small revista-see-more-card"
+                    style="height: 50px !important; min-height: 50px !important; padding: 0 15px !important; flex: 0 0 auto !important; width: auto !important; min-width: 200px;">
+                    <a href="<?php echo home_url(); ?>" class="see-more-link">
+                        <span class="see-more-text">Volver al Inicio</span>
+                        <span class="see-more-icon">&rarr;</span>
+                    </a>
+                </article>
+            </div>
+
         <?php else: ?>
             <p>No hay artículos en esta categoría.</p>
         <?php endif; ?>
