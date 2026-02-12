@@ -99,8 +99,8 @@ $category = get_queried_object();
                 <article class="revista-card-small revista-see-more-card"
                     style="height: 50px !important; min-height: 50px !important; padding: 0 15px !important; flex: 0 0 auto !important; width: auto !important; min-width: 200px;">
                     <a href="<?php echo home_url(); ?>" class="see-more-link">
+                        <span class="see-more-icon">&larr;</span>
                         <span class="see-more-text">Volver al Inicio</span>
-                        <span class="see-more-icon">&rarr;</span>
                     </a>
                 </article>
             </div>
