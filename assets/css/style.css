@@ -1394,7 +1394,8 @@ img {
     /* Título ajustado para una línea */
     font-weight: 800;
     line-height: 1.2;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    /* Reducido de 30px a 15px */
     color: var(--color-text-main);
     letter-spacing: -1px;
 }
@@ -1404,11 +1405,13 @@ img {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: 30px;
+    margin-top: 15px;
+    /* Reducido de 30px a 15px */
     color: var(--color-text-light);
     font-size: 1rem;
     border-top: 1px solid var(--color-border);
     padding-top: 30px;
+    /* Se mantiene en 30px */
     display: inline-flex;
     /* Para que la línea no ocupe todo */
     width: 100%;
@@ -1456,7 +1459,8 @@ img {
 }
 
 .single-featured-image {
-    margin-top: 60px;
+    margin-top: 30px;
+    /* Reducido de 60px a 30px para igualar espacios */
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
